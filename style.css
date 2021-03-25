@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #809fca;
+}
+.container {
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+}
+.container h1 {
+  margin-top: 10px;
+  color: whitesmoke;
+  letter-spacing: 1px;
+}
+#copyArea,
+#pasteArea {
+  padding: 10px;
+  width: 600px;
+  height: 150px;
+  display: block;
+  margin: 20px 0;
+  resize: none;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.misc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px 0 0;
+  background-color: #1dc994;
+  color: white;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+button:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.2);
+}
+#pasteBTN {
+  margin-bottom: 10px;
+}
+#reset {
+  margin-bottom: 0;
+}
+#confirm {
+  margin-top: 10px;
+  font-size: 20px;
+}
