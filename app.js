@@ -1,20 +1,3 @@
-const confirm = document.getElementById("confirm");
-const reset = document.getElementById("reset");
-const support = document.getElementById("support");
-
-reset.addEventListener("click", function reset() {
-  pasteArea.value = "";
-});
-
-// //! Detecting Support
-support.addEventListener("click", function () {
-  navigator.clipboard
-    ? (confirm.innerHTML = "Clipboard Api is Supported")
-    : (confirm.innerHTML = "Clipboard Api is Not Supported");
-  setTimeout(() => {
-    confirm.innerHTML = "";
-  }, 1000);
-});
 //! copy the text
 const copyArea = document.getElementById("copyArea");
 const copyBTN = document.getElementById("copyBTN");
@@ -60,3 +43,21 @@ const pasteData = () => {
     });
 };
 pasteBTN.addEventListener("click", pasteData);
+
+const confirm = document.getElementById("confirm");
+const reset = document.getElementById("reset");
+const support = document.getElementById("support");
+
+reset.addEventListener("click", function reset() {
+  pasteArea.value = "";
+});
+
+// //! Detecting Support
+support.addEventListener("click", function () {
+  navigator.clipboard
+    ? (confirm.innerHTML = "Clipboard Api is Supported")
+    : (confirm.innerHTML = "Clipboard Api is Not Supported");
+  setTimeout(() => {
+    confirm.innerHTML = "";
+  }, 1000);
+});
