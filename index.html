@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Copying to clipboard with HTML5</title>
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style type="text/css">
+      * {
+        font-family: "Roboto", sans-serif;
+      }
+
+      .container {
+        text-align: center;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #copyArea,
+      #pasteArea {
+        padding: 10px;
+        width: 600px;
+        height: 150px;
+        display: block;
+        margin: 20px 0;
+        resize: none;
+      }
+      .misc{
+        display:flex;
+        justify-content:center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      #confirm{
+        margin:10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Learn Projects | Clipboard API</h1>
+
+      <textarea class="to-copy" id="copyArea">
+Blog single-origin coffee keffiyeh disrupt air plant. Actually 90's beard, four loko enamel pin salvia dreamcatcher hexagon sartorial prism mumblecore. Raw denim schlitz shoreditch lumbersexual cliche kickstarter pop-up beard hot chicken polaroid street art prism DIY yr. Everyday carry direct trade post-ironic iPhone meggings godard actually food truck kale chips hexagon poutine. Prism meditation freegan letterpress thundercats seitan. Roof party 3 wolf moon dreamcatcher ennui swag tacos, four loko woke meh gochujang photo booth.</textarea
+      >
+
+      <button class="write-btn" id="copyBTN">Copy to clipboard!</button>
+
+      <textarea class="clipboard-results" id="pasteArea"></textarea>
+      <button class="read-btn" id="pasteBTN">Paste from clipboard</button>
+      <hr />
+    </div>
+    <div class="misc">
+      <h1 id="confirm"></h1>
+      <button id="reset">Reset</button>
+      <button id="support">Check Support
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
